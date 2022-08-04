@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.signup_container {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    height: 100vh;
+    position: relative;
+}
+
+.signup_main {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signup {
+    display: flex;
+    height: 70vh;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.side_main {
+    width: 50%;
+    text-align: center;
+    background-color: #f43397;
+    color: white;
+    position: relative;
+}
+
+.side {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.side_content {
+    margin: 10px 0px;
+}
+
+.form_main {
+    width: 50%;
+    position: relative;
+}
+
+.form{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form h1{
+    text-align: center;
+    color:#f43397;
+}
+
+.input input {
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    background: #f43397;
+    border: 1px solid #f43397;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: white;
+    border: 1px solid #f43397;
+    color: #f43397;
+    transition: 0.3s;
+}
+
+.btn-signup {
+    width: 150px;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-signup:hover{
+    background-color: white;
+    color:#f43397;
+    transition: 0.3s;
+}
+
+.already_user p{
+    margin-top: 15px;
+    text-align: center;
+}

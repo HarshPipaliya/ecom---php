@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    color: rgb(144, 144, 144);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.nav-content {
+    margin: 10px 0px;
+}
+
+.navbar_main {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.nav_links {
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.nav_links:hover {
+    color: #f43397;
+}
+
+.nav_links.active {
+    color: #f43397;
+}
+
+/* Main Content */
+.main_container {
+    z-index: -100;
+    max-width: 100%;
+    margin-top: 77px;
+}
+
+/* Slider */
+.slider {
+    background: url("https://www.sam-solutions.com/blog/wp-content/uploads/2017/04/eCommerce-Website-Components-photo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Products */
+.product_h1 {
+    text-align: center;
+    margin: 50px auto 30px;
+    color: #ff0084;
+    position: relative;
+    max-width: 400px;
+    font-weight: 800;
+}
+
+.product_h1::before {
+    content: '';
+    height: 2px;
+    display: block;
+    position: absolute;
+    width: calc(50% - 110px);
+    background-color: #f43397;
+    top: calc(50% - 1px);
+    left: 0px;
+}
+
+.product_h1::after {
+    content: '';
+    height: 2px;
+    display: block;
+    position: absolute;
+    width: calc(50% - 110px);
+    background-color: #f43397;
+    top: calc(50% - 1px);
+    right: 0px;
+}
+
+.card img {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card-body button {
+    width: 48%;
+    cursor: pointer;
+    /* background-color: #f43397;
+    color: white; */
+}
+
+.card-body span {
+    position: absolute;
+    background-color: #f43397;
+    color: white;
+    top: 0px;
+    right: 0px;
+    padding: 4px;
+    min-width: 100px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.card-body h5 {
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.card-body p {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card_buttons {
+    margin-top: 5px;
+}
+
+.card-body input {
+    width: 100%;
+    padding: 9px 0px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+
+.add_to_cart {
+    float: left;
+    background: white;
+}
+
+.buy_now {
+    float: right;
+    background: rgb(35, 187, 117);
+    color: white;
+    border: 1px solid rgb(35, 187, 117) !important;
+    outline: none !important;
+}
+
+@media (max-width:1100px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:800px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:550px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* About Us section */
+.about_main {
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    padding: 50px;
+}
+
+.about {}
+
+.about h1 {
+    text-align: center;
+    color: white;
+}
+
+.about .row {
+    display: flex;
+    width: 80%;
+    margin: 40px auto 0px;
+    justify-content: space-around;
+}
+
+.about .col {}
+
+.about .col a {
+    text-decoration: none;
+    display: block;
+    text-align: start;
+}
+
+.about .col a:hover {
+    text-decoration: underline;
+}
+
+.about_links h5 {
+    color: #f43397;
+    margin-bottom: 15px;
+}
+
+.about_links a {
+    color: white;
+    text-decoration: none;
+}
+
+.about_links a:hover {
+    color: #f43397;
+    text-decoration: none;
+}
+
+
+
+/* Utilitty Classes */
+.button {
+    padding: 13px;
+    background: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    margin: 0px 2px;
+    border: 1px solid #f43397;
+}
+
+.button:hover {
+    background-color: #f43397;
+    color: white;
+    transition: 0.3s;
+}
